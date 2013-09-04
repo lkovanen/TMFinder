@@ -19,11 +19,11 @@ Installation
 
 TMFinder uses [bliss][bliss] to calculate canonical forms of graphs. You need to install bliss separately to use TMFinder:
    
-   1. [Download bliss][bliss] (version 0.72 should work) and compile it by
-	 following the instructions included with it.
+1. [Download bliss][bliss] (version 0.72 should work) and compile it by
+	following the instructions included with it.
 
-   2. Add the path of the bliss directory to the environment variables
-     `LIBRARY_PATH` and `CPLUS_INCLUDE_PATH`.
+2. Add the path of the bliss directory to the environment variables
+	`LIBRARY_PATH` and `CPLUS_INCLUDE_PATH`.
 
 You should now be able to compile TMFinder by calling `make` in the directory `src`. If you get an error message about `bliss` or `graph.hh`, recheck your installation of bliss and the environment variables pointing to the location of the bliss library.
 
@@ -34,12 +34,12 @@ Python code for handling temporal motifs
 
 The `python` subdirectory contains python scripts that should prove useful for analysing and visualizing temporal motifs in the output file. The code relies on PyBliss for calculating graph isomorphisms>
 
-	1. [Download and install PyBliss][bliss], the Python wrapper for bliss.
-      	PyBliss uses version 0.50 of bliss (this comes with the PyBliss
-	 	package).
+1. [Download and install PyBliss][bliss], the Python wrapper for bliss.
+  	PyBliss uses version 0.50 of bliss (this comes with the PyBliss
+ 	package).
 
-    2. Add the path to your PyBliss directory to the environment
-       variable PYTHONPATH.
+2. Add the path to your PyBliss directory to the environment
+   variable PYTHONPATH.
 
 The scripts also require a number of other Python libraries that also need to be installed: `pylab`, `numpy`, `pygraphviz` and `argparse`. Make sure these are all installed.
 
