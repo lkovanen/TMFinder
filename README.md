@@ -32,7 +32,7 @@ After the compiling, make sure everything works by running the test script `test
 Python code for handling temporal motifs
 ----------------------------------------
 
-The `python` subdirectory contains python scripts that should prove useful for analysing and visualizing temporal motifs in the output file. The code relies on PyBliss for calculating graph isomorphisms>
+The `python` subdirectory contains python scripts that should prove useful for analysing and visualizing temporal motifs in the output file. The code relies on PyBliss for calculating graph isomorphisms.
 
 1. [Download and install PyBliss][bliss], the Python wrapper for bliss.
   	PyBliss uses version 0.50 of bliss (this comes with the PyBliss
