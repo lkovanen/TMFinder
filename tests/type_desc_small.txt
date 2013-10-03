@@ -1,0 +1,6 @@
+#NODES
+0	TBA		white	black
+42	Node_42		blue	#990033
+66	Node_66		red	black
+#EVENTS
+1	Event	event	#000000

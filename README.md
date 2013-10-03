@@ -1,7 +1,7 @@
 TMFinder
 ========
 
-Temporal Motif Finder can be used to detect and enumerate motifs in temporal networks. For more information, including the format definition of temporal networks and temporal motifs as well as the algorithms used, see
+Temporal Motif Finder can be used to detect and enumerate motifs in temporal networks. For more information, including the formal definition of temporal networks and temporal motifs as well as the algorithms used, see
 
 > Lauri Kovanen, Márton Karsai, Kimmo Kaski, János Kertész, Jari
 Saramäki, "Temporal motifs in time-dependent networks",
@@ -11,6 +11,8 @@ doi:10.1088/1742-5468/2011/11/P11005
 The code also implements the null model for identifying differences between different node and event types. This null model was introduced in
 
 > Lauri Kovanen, Kimmo Kaski, János Kertész, Jari Saramäki. "Temporal motifs reveal homophily, gender-specific patterns and group talk in mobile communication networks." arXiv:1302.2563 (2013).
+
+If you use this code in scientific work, please cite the above publication.
 
 TMFinder is published under the GPL v3 licence.
 
