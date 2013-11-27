@@ -6,7 +6,7 @@
 #include <map>
 #include <set>
 #include <list>
-#include "Nets.H"
+#include "lcelib/Nets.H"
 #include "std_printers.h"
 
 typedef DirNet<unsigned int> NetType;

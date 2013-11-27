@@ -10,7 +10,7 @@ doi:10.1088/1742-5468/2011/11/P11005
 
 The code also implements the null model for identifying differences between different node and event types. This null model was introduced in
 
-> Lauri Kovanen, Kimmo Kaski, János Kertész, Jari Saramäki. "Temporal motifs reveal homophily, gender-specific patterns and group talk in mobile communication networks." arXiv:1302.2563 (2013).
+> Lauri Kovanen, Kimmo Kaski, János Kertész, Jari Saramäki. "Temporal motifs reveal homophily, gender-specific patterns and group talk in mobile communication networks." Proceedings of the National Academy of Sciences, 201307941 (2013). doi:10.1073/pnas.1307941110
 
 If you use this code in scientific work, please cite the above publication.
 

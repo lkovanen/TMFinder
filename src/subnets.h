@@ -11,7 +11,7 @@ Lauri Kovanen (2/2012)
 #include <list>
 #include <set>
 #include <map>
-#include "Nets.H"
+#include "lcelib/Nets.H"
 #include "std_printers.h"
 #include "edges.h"
 
