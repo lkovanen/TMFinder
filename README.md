@@ -41,7 +41,7 @@ The `python` subdirectory contains python scripts that should prove useful for a
  	package).
 
 2. Add the path to your PyBliss directory to the environment
-   variable PYTHONPATH.
+   variable PYTHONPATH (both to the root directory containing the file `PyBliss.py` and to subdirectory `lib64/python/`).
 
 The scripts also require a number of other Python libraries that also need to be installed: `pylab`, `numpy`, `pygraphviz` and `argparse`. Make sure these are all installed.
 
