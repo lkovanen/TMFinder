@@ -260,7 +260,7 @@ protected:
   size_t findAndInit(const KeyType & key) {
     size_t loc = 0;
     //std::cerr <<"\nFIND_AND_INIT, key:" << key;
-    if (!forcedFind(key, loc)) {
+    if (!(this->forcedFind(key, loc))) {
       //std::cerr << ", was new\n";
       //this->refToVal(loc)=ValueType();
       /* FIXME: not always necessary */
@@ -298,7 +298,7 @@ public:
   reference operator[](const KeyType & key) {
     //std::cerr << "A reference from a map " << this << " with key: " << key 
     //	      << "\n";
-    return refToVal(findAndInit(key));
+    return this->refToVal(findAndInit(key));
   }
 
   /**
@@ -312,7 +312,7 @@ public:
      
   void setValue(const KeyType & key, const ValueType & value) {
     size_t loc = 0;
-    forcedFind(key, loc);
+    this->forcedFind(key, loc);
     super::setValue(loc, value);
   }
 
@@ -646,7 +646,7 @@ public:
   ValueType operator[](const KeyType & key) const {
     size_t loc;
     //std::cerr << "In oper[]";
-    if (findFirst(key, loc)) {
+    if (this->findFirst(key, loc)) {
       return super::constRefToVal(loc);
     } else {
       //std::cerr << "Foobar";
@@ -657,7 +657,7 @@ public:
   void setValue(const KeyType & key, const ValueType & value) {
     if (value==ValueType()) {
       this->remove(key);
-      assert(!contains(key));
+      assert(!(this->contains(key)));
     } else {
       super::setValue(key, value);
     }
@@ -713,7 +713,7 @@ public:
       std::cerr << "Super failed!";
       return false;
     }
-    if (contains(key)) {
+    if (this->contains(key)) {
       if (operator[](key) == ValueType()) {
 	std::cerr << "Shit! Key with def value present!\n";
 	std::cerr << "Key:" << key << ", value" << operator[](key);

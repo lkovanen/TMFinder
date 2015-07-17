@@ -87,7 +87,7 @@ public:
   }
 
   const_value_reference operator[](const KeyType & key) const {
-    return constRefToVal(key);
+    return this->constRefToVal(key);
   }
 
   template<typename RandSource>

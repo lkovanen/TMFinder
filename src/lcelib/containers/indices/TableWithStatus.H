@@ -114,7 +114,7 @@ protected:
   void setAsUsed(const size_t i) {status[i]=true;}
   void setAsEmpty(const size_t i) {status[i]=false;}
 public:
-  bool isUsed(const size_t i) const {return status[i];}  
+  bool isUsed(const size_t i) const {return status.constRefTo(i);}  
 };
 
 /**
