@@ -22,7 +22,7 @@ Installation
 TMFinder uses [bliss][bliss] to calculate canonical forms of graphs. You need to install bliss separately to use TMFinder:
    
 1. [Download bliss][bliss] (version 0.72 should work) and compile it by
-	following the instructions included with it.
+	following the instructions included with it. Make sure to compile the version without GMP, by calling `make` instead of `make gmp`.
 
 2. Add the path of the bliss directory to the environment variables
 	`LIBRARY_PATH` and `CPLUS_INCLUDE_PATH`.
