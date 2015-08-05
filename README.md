@@ -20,7 +20,7 @@ Installation
 ------------
 
 TMFinder uses [bliss][bliss] to calculate canonical forms of graphs. You need to install bliss separately to use TMFinder:
-   
+
 1. [Download bliss][bliss] (version 0.72 should work) and compile it by
 	following the instructions included with it. Make sure to compile the version without GMP, by calling `make` instead of `make gmp`.
 
@@ -51,6 +51,18 @@ Usage instructions
 ------------------
 
 For documentation about input and output file formats and usage options, call `bin/tmf --help`. The test scripts should also provide an example for getting started.
+
+
+Making sense of the output format
+---------------------------------
+
+Each line in the output file describes the statistics for one motif, and the motif itself is given at the end of the line as `N [node:color ...] edges ...`.
+
+In this raw output both events and vertices of the original data are represented as nodes; the number in column `N` corresponds to the total number of events and vertices. The word "color" is just another word for type, which here is either event type or vertex type. Color 1 is the default type for events in case event types are not given in the input data. ("Color" is commonly used in the context of identifying canonical forms of graphs, which is one step in identifying temporal motifs.)
+
+For example, `[0:1 1:2 2:3] 0,2 1,0` means graph `[1] -> [0] -> [2]`, but since we know that node 0 is an event (because it has type 1), this means a single event (of type 1) from a node of type 2 to a node of type 3. For more complicated motifs it gets tedious to understand what kind of motif the line represents without making a drawing, and this is why the python plotting library is also included.
+
+For a thorough discussion of the concepts and algorithms, please see sections 1, 2 and 3 in [this article](http://iopscience.iop.org/1742-5468/2011/11/P11005 "Temporal motifs in time-dependent networks"). Figure 2 explains the mapping of events to nodes and why it is needed.
 
 
 [bliss]: http://www.tcs.hut.fi/Software/bliss/ "bliss"
